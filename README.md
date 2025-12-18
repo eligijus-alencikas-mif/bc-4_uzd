@@ -2,16 +2,16 @@
 
 ## Pagrindiniai veikėjai
 
--   **Mažmenininkas (Retailer)** – užsako prekes, atlieka saugų apmokėjimą, patvirtina gavimą.
--   **Gamintojas (Manufacturer)** – priima užsakymą, parenka kurjerį, pateikia kainas, išrašo sąskaitą, gauna išmoką.
--   **Išmanusis kontraktas (Smart Contract)** – saugo užsakymo būseną, priima įrašus (kainas, sąskaitą, pristatymo patvirtinimą), laiko lėšas „escrow“ režimu ir paskirsto išmokas.
--   **Kurjeris (Courier)** – pateikia siuntimo kainą ir pristatymo terminą, atlieka pristatymą, gauna išmoką.
+-   **Mažmenininkas (Retailer)**
+-   **Gamintojas (Manufacturer)**
+-   **Išmanusis kontraktas (Smart Contract)**
+-   **Kurjeris (Courier)**
 
 ## Verslo modelio logika
 
 Šis modelis atitinka „**užsakymas → kainodara → saugus apmokėjimas → pristatymas → išmokos**“ grandinę, kur:
 
--   Išmanusis kontraktas veikia kaip **patikimas tarpininkas (escrow)**: mažmenininko lėšos laikomos kontrakte iki pristatymas patvirtinamas.
+-   Išmanusis kontraktas veikia kaip **patikimas tarpininkas (escrow)**: mažmenininko lėšos laikomos kontrakte iki pristatymo patvirtinamo.
 -   Gamintojas koordinuoja procesą: priima užsakymą, gauna siuntimo pasiūlymą, pateikia kainas kontraktui.
 -   Kurjeris teikia siuntimo paslaugą, o jo atlygis išmokamas tik įvykdžius pristatymo sąlygas.
 
