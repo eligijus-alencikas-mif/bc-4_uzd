@@ -1,13 +1,14 @@
 # Verslo modelis ir logika
 
+Šio projekto verslo modelis paimtas iš https://medium.com/coinmonks/build-a-smart-contract-to-sell-goods-6cf73609d25.  
+Šis modelis skirtas saugiam fizinių prekių užsakymo, transportavimo pajieškos ir apmokėjimui užtikrinti. Jis tai užtikrina naudojant išmaniają sutartį kuri visus mokėjimus laiko savyje iki kol visų dalyvių įsipareigojimai yra įvykdyti (escrow).
+
 ## Pagrindiniai veikėjai
 
 -   **Mažmenininkas (Retailer)**
 -   **Gamintojas (Manufacturer)**
--   **Išmanusis kontraktas (Smart Contract)**
+-   **Išmanioji sutartis (Smart Contract)**
 -   **Kurjeris (Courier)**
-
-## Tipinis scenarijus
 
 ## Sekų diagrama
 
@@ -25,3 +26,9 @@
 8. Kurjieris po siuntos pridavimo mažmeninkui pažymi, kad siuntimas įvykdytas išmaniojoje sutartyje.
 9. Išmanioji sutartis sumoka Gamintojui už užsakymą.
 10. Išmanioji sutartis sumoka Kurjieriui už siuntimą.
+
+# Modelio testavimas
+
+## Lokalus tinklas
+
+## Testinis tinklas
