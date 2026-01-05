@@ -1,6 +1,5 @@
 # Verslo modelis ir logika
 
-Šio projekto verslo modelis paimtas iš https://medium.com/coinmonks/build-a-smart-contract-to-sell-goods-6cf73609d25.  
 Šis modelis skirtas saugiam fizinių prekių užsakymo, transportavimo pajieškos ir apmokėjimui užtikrinti. Jis tai užtikrina naudojant išmaniają sutartį kuri visus mokėjimus laiko savyje iki kol visų dalyvių įsipareigojimai yra įvykdyti (escrow).
 
 ## Pagrindiniai veikėjai
