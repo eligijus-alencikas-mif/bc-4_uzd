@@ -12,7 +12,7 @@
 
 ## Sekų diagrama
 
-![image](./photos/Screenshot_20251218_011711.png)
+![](./photos/Screenshot_20251218_011711.png)
 
 ## Veiksmų aprašymas
 
@@ -30,5 +30,37 @@
 # Modelio testavimas
 
 ## Lokalus tinklas
+
+Veiksmų eiga:
+
+1. Ganache tinklo paleidimas su komanda: `ganache-cli -p 8545 --chainId 1337 --networkId 1337`
+2. Sukompiliuoti sutartį, atidarius naują terminalo langą projekto root direktorijoje paleidžiant šią komandą `truffle compile`
+3. Paleisti tinklapį nukeliaujant į `front-end` direktoriją ir paleidžiant komandą: `npm run dev`
+
+Tinklapis:
+
+![](./photos/front/Screenshot_20251218_015001.png)
+
+4. Paspaudus "Connect wallet" mygtuką išmetamas šis langas:
+
+![](./photos/front/image.png)
+
+5. Paspaudžiant "Connect" prijungiamas Metamask
+6. Toliau pridedama piniginė kurios privatus raktas yra aprašytas 1-o žingsnio terminalo išvestyje (pasirenkamas betkuris raktas)
+
+![](./photos/front/Screenshot_20260105_151904.png)
+
+![](./photos/front/Screenshot_20260105_152130.png)
+
+7. Į "contract address" laukelį įvedamas kitos piniginės viešas adresas ir paspaudžiama "load contract"
+
+8. Įvedamas užsakymas ir paspaudžiamas "Send Order"
+
+![](./photos/front/Screenshot_20260105_152634.png)
+
+9. Patvirtinamas užsakymas
+10. ganache-cli terminalo aplinkoje matoma įvykdita transakcija:
+
+![](./photos/front/Screenshot_20260105_153054.png)
 
 ## Testinis tinklas
