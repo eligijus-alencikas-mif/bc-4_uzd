@@ -45,7 +45,7 @@ Tinklapis:
 
 ![](./photos/front/image.png)
 
-5. Paspaudžiant "Connect" prijungiamas Metamask
+5. Paspaudžiant "Connect" prijungiama Metamask aplinka
 6. Toliau pridedama piniginė kurios privatus raktas yra aprašytas 1-o žingsnio terminalo išvestyje (pasirenkamas betkuris raktas)
 
 ![](./photos/front/Screenshot_20260105_151904.png)
@@ -58,9 +58,53 @@ Tinklapis:
 
 ![](./photos/front/Screenshot_20260105_152634.png)
 
-9. Patvirtinamas užsakymas
+9. Patvirtinama užklausa
 10. ganache-cli terminalo aplinkoje matoma įvykdita transakcija:
 
 ![](./photos/front/Screenshot_20260105_153054.png)
 
 ## Testinis tinklas
+
+Veiksmų eiga:
+
+1. Nueinama į Google Sepolia faucet (https://cloud.google.com/application/web3/faucet/ethereum/sepolia) ir gaunama 0.05 ETH pasirinktai piniginei, kad būtu galima testuoti kodą ant Sepolia tinklo
+
+![](./photos/Sepolia/Screenshot_20260105_163541.png)
+
+2. Atidaroma https://remix.ethereum.org, įkeliamas sutarties kodas
+3. Kodas sukompiliuojamas su 0.4.18 kompiliatorium
+
+![](./photos/Sepolia/Screenshot_20260105_174801.png)
+
+4. Sutartis paleidžiama (deploy) su kitos piniginės adresu "Deploy & Verify" skiltyje.
+
+![](./photos/Sepolia/Screenshot_20260105_194939.png)
+
+5. Patvirtinama užklausa
+
+![](./photos/Sepolia/Screenshot_20260105_195312.png)
+
+6. Užklausos verifikacija
+
+![](./photos/Sepolia/Screenshot_20260105_200456.png)
+
+---
+
+_Kita užklausa (sutarties naudojimas)_
+
+7. Pakeičiama transakcijas vykdanti piniginę į tą kuri buvo nurodyta "Deploy & Verify" skiltyje 4-ame žingsnyje
+
+![](./photos/Sepolia/Screenshot_20260105_205513.png)
+
+8. Vykdoma "Sendorder" transakcija įvedant produkto pavadinimą ir kiekį.
+
+![](./photos/Sepolia/Screenshot_20260105_205155.png)
+
+9. Patikrinami transakcijos duomenys
+
+![](./photos/Sepolia/Screenshot_20260105_210342.png)
+![](./photos/Sepolia/Screenshot_20260105_210420.png)
+
+10. Patkrinamos sutarties transakcijos. (_Viena transakcija yra su raudonu šauktuku šalia. Šita transakcija yra nepavykusi transakcija, nes ji buvo vykdyta iš netinkamos piniginės_)
+
+![](./photos/Sepolia/Screenshot_20260105_210712.png)
