@@ -12,7 +12,7 @@
 
 ## Sekų diagrama
 
-![](./photos/Screenshot_20251218_011711.png)
+![](./photos/model.png)
 
 ## Veiksmų aprašymas
 
@@ -108,3 +108,15 @@ _Kita užklausa (sutarties naudojimas)_
 10. Patkrinamos sutarties transakcijos. (_Viena transakcija yra su raudonu šauktuku šalia. Šita transakcija yra nepavykusi transakcija, nes ji buvo vykdyta iš netinkamos piniginės_)
 
 ![](./photos/Sepolia/Screenshot_20260105_210712.png)
+
+# Kitų intelektinės nuosavybės naudojimas
+
+## Šaltiniai
+
+Šio projekto veikimo principai bei modelio grafikas (./photos/model.png) paimti iš: https://medium.com/coinmonks/build-a-smart-contract-to-sell-goods-6cf73609d25
+
+Šio projekto sutarties kodas (./contracts/Deal.sol) bei kiti failai paimti iš: https://github.com/fabiojose/ethereum-ex
+
+## Dirbtinio intelekto naudojimas
+
+Dirbtinis intelektas buvo naudotas "front-end" tinklapio kodo sugeneravimui React kalba.
